@@ -1,0 +1,26 @@
+@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
+  #a, #b, #c, #d, #i {
+    width: 480px;
+  }
+
+  #a {
+    height: 75px;
+  }
+
+  #b {
+    height: 150px;
+  }
+
+  #c, #d {
+    height: 125px;
+  }
+
+  #i {
+    height: 80px;
+  }
+
+  #e, #f, #g, #h {
+    width: 240px;
+    height: 250px;
+  }
+}
