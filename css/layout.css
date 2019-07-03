@@ -27,7 +27,7 @@
   float: left;
 }
 
-@media only screen and (min-device-width: 480px) and (max-device-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
   #a, #b, #c, #d, #i {
     width: 480px;
   }
