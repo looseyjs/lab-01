@@ -3,10 +3,24 @@
   text-align: center;
 }
 
+
+/* mobile media query */
 body {
-  width: 480;
+  width: 480px;
   margin: auto;
 }
+/* end mobile media query */
+
+
+/* tablet media query */
+@media screen and (min-width: 481px) and (max-width: 767) {
+  body {
+    width: 767px;
+    margin: auto;
+  }
+}
+/* end table media query */
+
 
 /* desktop media query */
 @media screen and (min-width: 767px) {
