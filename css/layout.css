@@ -1,66 +1,107 @@
-div {
+/* mobile media query */
+section {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
-section {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
+div > div:nth-child(1), div > div:nth-child(2), section > div:nth-child(1), section > div:nth-child(2), section > div:nth-child(7) {
+  width: 100%;
 }
 
 div > div:nth-child(1) {
-  width: 960px;
-  height: 100px;
+  height: 9%;
 }
 
 div > div:nth-child(2) {
-  width: 20%;
-  height: 600px;
+  height: 19%;
 }
 
 section > div:nth-child(1), section > div:nth-child(2) {
-  width: 50%;
-  height: 200px;
-
-}
-
-section > div:nth-child(3), section > div:nth-child(4), section > div:nth-child(5), section > div:nth-child(6) {
-  width: 25%;
-  height: 250px;
+  height: 16vh;
 }
 
 section > div:nth-child(7) {
-  width: 100%;
-  height: 150px;
+  height: 10vh;
 }
 
-@media screen and (max-width: 767px) {
+section > div:nth-child(3), section > div:nth-child(4), section > div:nth-child(5), section > div:nth-child(6) {
+  width: 50%;
+  height: 250px;
+}
+/* end mobile media query */
+
+/* tablet media query */
+@media (min-width: 768px) and (max-width: 1024px) {
   section {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
   }
+  
   div > div:nth-child(1), div > div:nth-child(2), section > div:nth-child(1), section > div:nth-child(2), section > div:nth-child(7) {
     width: 100%;
   }
-
+  
   div > div:nth-child(1) {
-    height: 75px;
+    height: 9%;
   }
-
+  
   div > div:nth-child(2) {
-    height: 150px;
+    height: 19%;
   }
-
+  
   section > div:nth-child(1), section > div:nth-child(2) {
-    height: 125px;
+    height: 16vh;
   }
-
+  
   section > div:nth-child(7) {
-    height: 80px;
+    height: 10vh;
   }
-
+  
   section > div:nth-child(3), section > div:nth-child(4), section > div:nth-child(5), section > div:nth-child(6) {
     width: 50%;
     height: 250px;
   }
 }
+/* end tablet media query */
+
+/* desktop media query */
+@media (min-width: 1025px){
+  div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  
+  div > div:nth-child(1) {
+    width: 100%;
+    height: 13.5vh;
+  }
+  
+  div > div:nth-child(2) {
+    width: 20%;
+    height: 76.5vh;
+  }
+  
+  section > div:nth-child(1), section > div:nth-child(2) {
+    width: 50%;
+    height: 25.5vh;  
+  }
+  
+  section > div:nth-child(3), section > div:nth-child(4), section > div:nth-child(5), section > div:nth-child(6) {
+    width: 25%;
+    height: 32vh;
+  }
+  
+  section > div:nth-child(7) {
+    width: 100%;
+    height: 19vh;
+  }
+}
+/* end desktop media query */

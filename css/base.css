@@ -3,15 +3,29 @@
   text-align: center;
 }
 
+
+/* mobile media query */
 body {
-  width: 960px;
+  width: 480px;
   margin: auto;
 }
+/* end mobile media query */
 
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+/* tablet media query */
+@media (min-width: 768px) and (max-width: 1024px) {
   body {
-    width: 480;
+    width: 750px;
     margin: auto;
   }
+}
+/* end table media query */
 
+
+/* desktop media query */
+@media (min-width: 1025px) {
+  body {
+    width: 960px;
+    margin: auto;
+  }
 }
