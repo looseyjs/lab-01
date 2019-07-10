@@ -32,13 +32,42 @@ section > div:nth-child(3), section > div:nth-child(4), section > div:nth-child(
 /* end mobile media query */
 
 /* tablet media query */
-@media screen and (min-width: 481px) and (max-width: 767) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
   
+  div > div:nth-child(1), div > div:nth-child(2), section > div:nth-child(1), section > div:nth-child(2), section > div:nth-child(7) {
+    width: 100%;
+  }
+  
+  div > div:nth-child(1) {
+    height: 9%;
+  }
+  
+  div > div:nth-child(2) {
+    height: 19%;
+  }
+  
+  section > div:nth-child(1), section > div:nth-child(2) {
+    height: 16vh;
+  }
+  
+  section > div:nth-child(7) {
+    height: 10vh;
+  }
+  
+  section > div:nth-child(3), section > div:nth-child(4), section > div:nth-child(5), section > div:nth-child(6) {
+    width: 50%;
+    height: 250px;
+  }
 }
-/* end table media query */
+/* end tablet media query */
 
 /* desktop media query */
-@media screen and (min-width: 768px) {
+@media (min-width: 1025px){
   div {
     display: flex;
     flex-wrap: wrap;

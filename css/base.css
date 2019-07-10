@@ -13,9 +13,9 @@ body {
 
 
 /* tablet media query */
-@media screen and (min-width: 481px) and (max-width: 767) {
+@media (min-width: 768px) and (max-width: 1024px) {
   body {
-    width: 767px;
+    width: 750px;
     margin: auto;
   }
 }
@@ -23,7 +23,7 @@ body {
 
 
 /* desktop media query */
-@media screen and (min-width: 767px) {
+@media (min-width: 1025px) {
   body {
     width: 960px;
     margin: auto;
