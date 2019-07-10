@@ -1,66 +1,74 @@
-div {
+/* mobile media query */
+section {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
 
-section {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80%;
+div > div:nth-child(1), div > div:nth-child(2), section > div:nth-child(1), section > div:nth-child(2), section > div:nth-child(7) {
+  width: 100%;
 }
 
 div > div:nth-child(1) {
-  width: 960px;
-  height: 100px;
+  height: 75px;
 }
 
 div > div:nth-child(2) {
-  width: 20%;
-  height: 600px;
-}
-
-section > div:nth-child(1), section > div:nth-child(2) {
-  width: 50%;
-  height: 200px;
-
-}
-
-section > div:nth-child(3), section > div:nth-child(4), section > div:nth-child(5), section > div:nth-child(6) {
-  width: 25%;
-  height: 250px;
-}
-
-section > div:nth-child(7) {
-  width: 100%;
   height: 150px;
 }
 
-@media screen and (max-width: 767px) {
+section > div:nth-child(1), section > div:nth-child(2) {
+  height: 125px;
+}
+
+section > div:nth-child(7) {
+  height: 80px;
+}
+
+section > div:nth-child(3), section > div:nth-child(4), section > div:nth-child(5), section > div:nth-child(6) {
+  width: 50%;
+  height: 250px;
+}
+/* end mobile media query */
+
+
+/* desktop media query */
+@media screen and (min-width: 767px) {
+  div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
   section {
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
   }
-  div > div:nth-child(1), div > div:nth-child(2), section > div:nth-child(1), section > div:nth-child(2), section > div:nth-child(7) {
-    width: 100%;
-  }
-
+  
   div > div:nth-child(1) {
-    height: 75px;
+    width: 960px;
+    height: 100px;
   }
-
+  
   div > div:nth-child(2) {
-    height: 150px;
+    width: 20%;
+    height: 600px;
   }
-
+  
   section > div:nth-child(1), section > div:nth-child(2) {
-    height: 125px;
-  }
-
-  section > div:nth-child(7) {
-    height: 80px;
-  }
-
-  section > div:nth-child(3), section > div:nth-child(4), section > div:nth-child(5), section > div:nth-child(6) {
     width: 50%;
+    height: 200px;
+  
+  }
+  
+  section > div:nth-child(3), section > div:nth-child(4), section > div:nth-child(5), section > div:nth-child(6) {
+    width: 25%;
     height: 250px;
   }
+  
+  section > div:nth-child(7) {
+    width: 100%;
+    height: 150px;
+  }
 }
+/* end desktop media query */
